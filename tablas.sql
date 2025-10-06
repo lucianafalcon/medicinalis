@@ -1,16 +1,11 @@
 /* ==========================================================
    Medicinalis - L.Falcon
    
-   Script de creación de base de datos y tablas Datos Iniciales
+   Script de creación de base de datos y tablas 
 ========================================================== */
 
--- Eliminar tablas si existen
-DROP TABLE IF EXISTS paciente;
-DROP TABLE IF EXISTS estudio;
-DROP TABLE IF EXISTS resultado;
-DROP TABLE IF EXISTS biomarcador;
-DROP TABLE IF EXISTS condicion;
-DROP TABLE IF EXISTS recomendacion;
+CREATE DATABASE medicinalis;
+USE medicinalis;
 
 -- creacion tablas
 CREATE TABLE paciente (
