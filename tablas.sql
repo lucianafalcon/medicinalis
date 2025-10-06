@@ -22,6 +22,12 @@ CREATE TABLE estudio (
     fecha_estudio DATE
 );
 
+CREATE TABLE biomarcador (
+    id_biomarcador INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_biomarcador VARCHAR(50),
+    unidad_medida VARCHAR(10)
+);
+
 CREATE TABLE resultado (
     id_resultado INT AUTO_INCREMENT PRIMARY KEY,
     id_paciente INT,
@@ -32,12 +38,6 @@ CREATE TABLE resultado (
     FOREIGN KEY (id_paciente) REFERENCES paciente(id_paciente),
     FOREIGN KEY (id_estudio) REFERENCES estudio(id_estudio),
     FOREIGN KEY (id_biomarcador) REFERENCES biomarcador(id_biomarcador)
-);
-
-CREATE TABLE biomarcador (
-    id_biomarcador INT AUTO_INCREMENT PRIMARY KEY,
-    nombre_biomarcador VARCHAR(50),
-    unidad_medida VARCHAR(10)
 );
 
 CREATE TABLE condicion (
@@ -52,10 +52,3 @@ CREATE TABLE recomendacion (
     descripcion_recomendacion VARCHAR(100),
     FOREIGN KEY (id_condicion) REFERENCES condicion(id_condicion)
 );
-
-
-
-
-
-
-
