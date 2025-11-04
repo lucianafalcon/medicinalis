@@ -18,3 +18,5 @@ El sistema automatiza la evaluación de resultados y asegura la trazabilidad des
 ├─ objetos_db.sql # Funciones, Stored Procedures, Vistas y Trigger
 
 └─ insercion_datos.sql # Inserción de datos de prueba y demostración de funcionamiento
+
+[MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
