@@ -121,10 +121,6 @@ BEGIN
 
     COMMIT;
     
-    -- Opcional: Llamar a la generación de condición para los nuevos resultados (el trigger lo hará automáticamente)
-    -- CALL sp_GenerarCondicion(v_id_resultado_1);
-    -- CALL sp_GenerarCondicion(v_id_resultado_2);
-
 END$$
 DELIMITER ;
 
