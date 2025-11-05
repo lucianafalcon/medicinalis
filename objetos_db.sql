@@ -6,9 +6,6 @@
     -- PROYECTO: Medicinalis  
 ========================================================== */
 
-
--- Nota: Asegurar que se haya ejecutado previamente el script de creación de tablas.
-
 USE Medicinalis; -- Reemplazar con el nombre real de tu base de datos
 
 -- ######################################
