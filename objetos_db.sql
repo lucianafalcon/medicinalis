@@ -6,7 +6,7 @@
     -- PROYECTO: Medicinalis  
 ========================================================== */
 
-USE Medicinalis; -- Reemplazar con el nombre real de tu base de datos
+USE Medicinalis;
 
 -- ######################################
 -- 1. FUNCIONES PERSONALIZADAS
