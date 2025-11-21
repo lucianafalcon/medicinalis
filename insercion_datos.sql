@@ -6,7 +6,7 @@
 ========================================================== */
 
 
-USE Medicinalis; -- Reemplazar con el nombre real de tu base de datos
+USE Medicinalis; 
 
 -- 1. Insertar Pacientes
 INSERT INTO Paciente (nombre, apellido, fecha_nacimiento, sexo) VALUES
