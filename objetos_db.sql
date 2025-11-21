@@ -163,7 +163,7 @@ JOIN Estudio E ON R.id_estudio = E.id_estudio
 JOIN Biomarcador B ON R.id_biomarcador = B.id_biomarcador
 WHERE fn_EstadoResultado(R.id_resultado) IN ('Bajo', 'Alto');
 
--- 3.4. Vista:
+-- 3.4. Vista: Mostrar un resumen compacto por paciente (estudios tiene, restados cargados y condiciones detectadas)
 CREATE VIEW vw_ResumenEstudios AS
 SELECT 
     p.id_paciente,
@@ -177,7 +177,7 @@ LEFT JOIN Resultado r ON e.id_estudio = r.id_estudio
 LEFT JOIN Resultado_Condicion rc ON r.id_resultado = rc.id_resultado
 GROUP BY p.id_paciente;
 
--- 3.5. Vista:
+-- 3.5. Vista: Mostrar que condiciones se generan con cada biomarcador + los valores y rangos
 CREATE VIEW vw_CondicionesPorBiomarcador AS
 SELECT 
     b.nombre_biomarcador,
