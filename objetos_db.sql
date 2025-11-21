@@ -163,11 +163,42 @@ JOIN Estudio E ON R.id_estudio = E.id_estudio
 JOIN Biomarcador B ON R.id_biomarcador = B.id_biomarcador
 WHERE fn_EstadoResultado(R.id_resultado) IN ('Bajo', 'Alto');
 
+-- 3.4. Vista:
+CREATE VIEW vw_ResumenEstudios AS
+SELECT 
+    p.id_paciente,
+    CONCAT(p.nombre, ' ', p.apellido) AS paciente,
+    COUNT(DISTINCT e.id_estudio) AS total_estudios,
+    COUNT(DISTINCT r.id_resultado) AS total_resultados,
+    COUNT(DISTINCT rc.id_condicion) AS total_condiciones
+FROM Paciente p
+LEFT JOIN Estudio e ON p.id_paciente = e.id_paciente
+LEFT JOIN Resultado r ON e.id_estudio = r.id_estudio
+LEFT JOIN Resultado_Condicion rc ON r.id_resultado = rc.id_resultado
+GROUP BY p.id_paciente;
+
+-- 3.5. Vista:
+CREATE VIEW vw_CondicionesPorBiomarcador AS
+SELECT 
+    b.nombre_biomarcador,
+    r.valor_resultado,
+    r.rango_min,
+    r.rango_max,
+    c.nombre_condicion,
+    p.nombre AS nombre_paciente,
+    p.apellido AS apellido_paciente
+FROM Biomarcador b
+JOIN Resultado r ON b.id_biomarcador = r.id_biomarcador
+JOIN Paciente p ON p.id_paciente = r.id_paciente
+LEFT JOIN Resultado_Condicion rc ON r.id_resultado = rc.id_resultado
+LEFT JOIN Condicion c ON c.id_condicion = rc.id_condicion;
+Con estas dos ya tenés:
+
 -- ######################################
 -- 4. TRIGGERS
 -- ######################################
 
--- Trigger para ejecutar el diagnóstico automáticamente después de un INSERT en Resultado
+-- Trigger 1: para ejecutar el diagnóstico automáticamente después de un INSERT en Resultado
 DELIMITER $$
 CREATE TRIGGER tr_after_insert_resultado
 AFTER INSERT ON Resultado
@@ -177,3 +208,11 @@ BEGIN
     CALL sp_GenerarCondicion(NEW.id_resultado);
 END$$
 DELIMITER ;
+
+-- Trigger 2: por si alguien vuelve a cargar un valor corregido en un análisis, el sistema recalcula automáticamente si debe crear o actualizar condiciones,garantizando coherencia clínica
+CREATE TRIGGER tr_after_update_resultado
+AFTER UPDATE ON Resultado
+FOR EACH ROW
+BEGIN
+    CALL sp_GenerarCondicion(NEW.id_resultado);
+END;
