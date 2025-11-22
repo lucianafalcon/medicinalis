@@ -1,0 +1,31 @@
+id_biomarcador,nombre_biomarcador,unidad_medida
+1,Glucosa,mg/dL
+2,Hierro,µg/dL
+3,Vitamina D,ng/mL
+4,Colesterol Total,mg/dL
+5,Colesterol HDL,mg/dL
+6,Colesterol LDL,mg/dL
+7,Triglicéridos,mg/dL
+8,Vitamina B12,pg/mL
+9,Ácido Fólico,ng/mL
+10,TSH,µIU/mL
+11,T4 Libre,ng/dL
+12,T3 Libre,pg/mL
+13,Insulina,µIU/mL
+14,Calcio,mg/dL
+15,Magnesio,mg/dL
+16,Proteína C Reactiva,mg/L
+17,Hemoglobina,g/dL
+18,Hematocrito,%
+19,Sodio,mmol/L
+20,Potasio,mmol/L
+21,Creatinina,mg/dL
+22,Urea,mg/dL
+23,Ácido Úrico,mg/dL
+24,Transaminasa GOT (AST),U/L
+25,Transaminasa GPT (ALT),U/L
+26,Gamma-GT,U/L
+27,Ferritina,ng/mL
+28,Vitamina E,mg/L
+29,Vitamina A,µg/dL
+30,Zinc,µg/dL

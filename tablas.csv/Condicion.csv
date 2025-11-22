@@ -1,0 +1,41 @@
+id_condicion,nombre_condicion
+1,Hiperglucemia
+2,Deficiencia de Hierro
+3,Deficiencia Vitamina D
+4,Deficiencia de Magnesio
+5,Deficiencia de Potasio
+6,Resistencia a la Insulina
+7,Hipotiroidismo
+8,Hipertensión
+9,Anemia
+10,Colesterol Elevado
+11,Deficiencia de Calcio
+12,Deficiencia de Vitamina B12
+13,Deshidratación
+14,Hipertrigliceridemia
+15,Prediabetes
+16,Deficiencia de Ácido Fólico
+17,Deficiencia de Zinc
+18,Deficiencia de Selenio
+19,Deficiencia de Vitamina A
+20,Deficiencia de Vitamina K
+21,Deficiencia de Vitamina E
+22,Hipocalcemia
+23,Hipernatremia
+24,Hiponatremia
+25,Hipopotasemia
+26,Hipermagnesemia
+27,Alteración de la Función Hepática
+28,Triglicéridos Elevados
+29,GGT Elevada
+30,Hemoglobina Baja
+31,Plaquetas Bajas
+32,Leucocitos Elevados
+33,PCR Alta (Inflamación)
+34,Ferritina Baja
+35,Urea Elevada
+36,Creatinina Elevada
+37,Déficit de Omega 3
+38,Intolerancia a la Glucosa
+39,Baja Sensibilidad a la Insulina
+40,Riesgo Cardiometabólico Elevado
