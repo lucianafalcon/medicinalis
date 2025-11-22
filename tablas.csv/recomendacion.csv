@@ -1,0 +1,31 @@
+id_recomendacion,id_condicion,producto_recomendado,descripcion_recomendacion
+1,1,Control Glucosa Plus,Ayuda a mantener niveles saludables de glucosa en sangre.
+2,2,Hierro Quelado 25mg,Mejora la absorción de hierro y combate la anemia.
+3,3,Vitamina D3 2000 UI,Eleva niveles de vitamina D y mejora la salud ósea.
+4,4,Omega 3 EPA/DHA,Contribuye a reducir triglicéridos y mejorar salud cardiovascular.
+5,5,Fitosteroles Naturales,Disminuye la absorción intestinal de colesterol LDL.
+6,6,HDL Booster,Apoya el aumento del colesterol HDL protector.
+7,7,LDL Reducer,Ayuda a reducir el colesterol LDL elevado.
+8,8,Vitamina B12 Sublingual,Ideal para elevar niveles de B12 y mejorar energía.
+9,9,Ácido Fólico 1mg,Recomendado para deficiencia de folatos y salud celular.
+10,10,TSH Balance,Ayuda en el soporte tiroideo cuando hay valores fuera de rango.
+11,11,T4 Boost,Indicado para complementar en casos de T4 libre disminuida.
+12,12,T3 Support,Apoya la función tiroidea y metabolismo energético.
+13,13,Insulina Control,Ayuda a mejorar la sensibilidad a la insulina.
+14,14,Calcio + Vitamina D,Mejora niveles de calcio y salud ósea.
+15,15,Magnesio Citrato 400mg,Beneficia la relajación muscular y reduce estrés.
+16,16,Inflamación Cero,Reduce proteína C reactiva y marcadores inflamatorios.
+17,17,Complejo de Hierro + B12,Ayuda a elevar hemoglobina en casos de anemia leve.
+18,18,Suplemento de Hierro Suave,Soporte para hematocrito bajo.
+19,19,Electrolitos Balance,Ayuda a estabilizar niveles de sodio en sangre.
+20,20,Potasio Plus,Soporte en desequilibrios leves de potasio.
+21,21,Creatinina Clean,Apoya la función renal y control de creatinina.
+22,22,Urea Control,Ayuda en soporte renal y regulación de urea.
+23,23,Ácido Úrico Balance,Reduce niveles de ácido úrico y previene hiperuricemia.
+24,24,Detox Hepático Natural,Mejora enzimas hepáticas como GOT (AST).
+25,25,Hígado Protector Completo,Ayuda a normalizar GPT (ALT) elevada.
+26,26,Cardo Mariano 150mg,Soporte hepático para Gamma-GT elevada.
+27,27,Ferritina Boost,Eleva reservas de hierro en ferritina.
+28,28,Vitamina E 400 UI,Actúa como antioxidante para niveles bajos de vitamina E.
+29,29,Vitamina A 5000 UI,Mejora niveles de retinol en deficiencia.
+30,30,Zinc Quelado 30mg,Apoya la inmunidad y mejora niveles séricos de zinc.
