@@ -1,4 +1,4 @@
-#  Medicinalis - Sistema de Recomendaciones Nutricionales Basado en Análisis Clínicos
+#  Medicinalis
 **Medicinalis** es una base de datos diseñada para organizar estudios clínicos, biomarcadores y condiciones nutricionales, generando **recomendaciones automáticas** basadas en análisis de sangre.
 
 ## Objetivo
